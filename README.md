@@ -2,6 +2,9 @@
 
 This repo provides Docker environment for the [Graphic Design with ggplot2](https://www.rstudio.com/conference/2022/workshops/ggplot2-graphic-design/) workshop at [rstudio::conf 2022](https://www.rstudio.com/conference/) by Cédric Scherer.
 
+
+**Current image:** rkrispin/ggplot2_workshop:dev.0.0.0.9000
+
 ## Getting started
 
 The Docker image named as `rkrispin/ggplot2_workshop:dev.0.0.0.9000`, you can pull it with the `docker pull` command:
@@ -28,6 +31,18 @@ You can now open RStudio server from your browser by logging to `http://localhos
 
 
 ### Using docker-compose
+
+A more robust way to work with RStudio server is to lunch the image with `docker-compose`. This enables to add some customiztion, which can done also from the command line but simpler with `docker-compose`. To load your RStudio local setting and month the docker container to a local folder we will have to set the following envrionment variables:
+
+- `GGPLOT2_WORKSHOP_IMAGE` - the name of the image
+- `GGPLOT2_WORKING_WORKING_DIR` - the path of the local folder to MONTH with the docker container
+- `RSTUDIO_CONFIG_PATH` - The path for your local RStudio setting to load your setting (color theme, code snippet, etc.)
+
+To lunch RStudio server with docker compose use the `docker-compose` command:
+
+``` shell
+docker-compose up -d
+```
 
 
 
@@ -60,3 +75,4 @@ for(i in sort(packages)){
 - Debug missing packages
 - Fix the mov file
 - Update the docker version
+- Check spelling

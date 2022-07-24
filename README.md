@@ -27,9 +27,7 @@ CONTAINER ID   IMAGE                                      COMMAND               
 
 You can now open RStudio server from your browser by logging to `http://localhost:8787`:
 
-<video controls="controls" width="800" height="600" name="Docker Compose">
-  <source src="images/docker run.mov"> </video>
-
+<img src="images/docker run.gif" width="60%" align="center"/></a>
 
 
 ### Using docker-compose
@@ -48,9 +46,8 @@ docker-compose up -d
 
 You should expect the following output:
 
+<img src="images/docker compose.gif" width="60%" align="center"/></a>
 
-<video controls="controls" width="800" height="600" name="Docker Compose">
-  <source src="images/docker run.mov"> </video>
 
 ### Check the environment requirements 
 ``` R

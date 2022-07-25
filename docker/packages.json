@@ -1,6 +1,22 @@
 {
     "packages": [
         {
+            "package": "RcppEigen",
+            "version":"0.3.3.9.2"
+        },
+        {
+            "package": "lubridate",
+            "version":"1.8.0"
+        },
+        {
+            "package": "png",
+            "version":"0.1-7"
+        },
+        {
+            "package": "gridtext",
+            "version":"	0.1.4"
+        },
+        {
             "package": "ggplot2",
             "version":"3.3.6"
         },

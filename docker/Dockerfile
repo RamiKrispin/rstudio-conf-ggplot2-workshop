@@ -9,6 +9,11 @@ CMD ["/usr/lib/rstudio-server/bin/rserver", "--server-daemonize", "0", "--auth-n
 RUN apt-get update && apt-get install -y --no-install-recommends \
     jq \
     libxml2-dev \
+    libpng-dev \
+    libmagick++-dev \
+    libprotobuf-dev \
+    libjq-dev \
+    libudunits2-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # installing R packages

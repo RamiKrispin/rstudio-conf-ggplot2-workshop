@@ -29,6 +29,13 @@ You can now open RStudio server from your browser by logging to `http://localhos
 
 <img src="images/docker run.gif" width="60%" align="center"/></a>
 
+<video width="320" height="240" controls>
+  <source src="images/docker_run.mov" type="video/mp4">
+</video>
+
+
+![](images/docker_run.mov)
+
 
 ### Using docker-compose
 
@@ -50,6 +57,8 @@ You should expect the following output:
 
 
 ### Check the environment requirements 
+
+To test and validate that all the required packages are install in the container, once lunched, run the following code:
 ``` R
 packages <- c(
   "ggplot2", "readr", "tibble", "tidyr", "forcats", "stringr",

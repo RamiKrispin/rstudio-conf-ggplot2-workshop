@@ -11,7 +11,7 @@ else
 fi
 
 
-docker build . -t $tag
+docker build . --progress=plain -t $tag
 
 if [[ $? = 0 ]] ; then
 echo "Pushing docker..."
